@@ -19,6 +19,19 @@ body{
     position: fixed;
 
 } 
+#noResult{
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    margin-top: 35vh;
+    transition: 1s linear;
+}
+#noResult:hover{
+    font-size:66px ;
+    color:#f1c51c;
+}
 #header img{
     height: 8vh;
     width: 8vh;
@@ -31,44 +44,10 @@ body{
     font-weight: 600;
     margin: 10px 20px 10px 0;
 }
-#header input{
-    height: 5vh;
-    width: 60%;
-    border: none;
-    background:none;
-    outline: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    margin:10px 20px 10px 0;
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    box-shadow: inset 15px 10px 15px 20px hsl(264, 84%, 17%) ;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-#searchInput a{
-    font-style: none ;
-    color: green;
-}
-#searchInputBtn{
-    height: 7.88vh;
-    width: 10vh;
-    background: transparent;
-    margin:10px 20px 10px -20px ;
-    border: none;
-    box-shadow: inset 15px 10px 15px 20px hsl(264, 84%, 17%) ;
-    cursor: pointer;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: white;
-    font-size: 25px;
-}
-#favourate{
-    height: 6vh;
-    width: 23vh;
+
+#goToSearch{
+    height: 8vh;
+    width: 30vh;
     cursor: pointer;
     border: none;
     box-shadow: inset 15px 10px 15px 20px hsl(264, 84%, 17%) ;
@@ -80,13 +59,13 @@ body{
     color: #f1c51c;
     border-radius: 5px;
     font-size: 25px;
-    margin-left: 40px;
-    margin-top: 16px;
+    margin-left: 145vh;
+    margin-top: 10px;
     padding: 4px;;
     font-size: 20px;
 }
 
-.movieContainer{
+.favourateMovies{
     height: 100%;
     width:100vw;
     display:flex;
@@ -94,22 +73,9 @@ body{
     justify-content: space-around;
     margin-top: 70px;
     background-color:hsl(264, 84%, 17%) ;
+
 }
 
-
-#noResult{
-    font-size: 50px;
-    color: white;
-    font-weight: 500;
-    border: none;
-    text-align: center;
-    margin-top: 35vh;
-    transition: 1s linear;
-}
-#noResult:hover{
-    font-size:66px ;
-    color:#f1c51c;
-}
 .movieCard{
     height: 50vh;
     width: 18%;
@@ -139,22 +105,17 @@ body{
     text-overflow: ellipsis;
 
 }
+
 #addToFav{
-    margin: 0px 1px 5px 15px;
+    background-color: transparent;
     font-size: 25px;
+    color: white;
+    margin: 0px 1px 5px 15px;
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: transparent;
-}
-.fa-regular{
-    color: green;
 
 }
-.favourate .fa-regular{
-    color: red;
-}
-
 #viewDetails{
     font-size: 20px;
     color: #f1c51c;
@@ -166,3 +127,8 @@ body{
     margin-left: 96px;
 }
 
+#remover{
+    background-color:#2E236C;
+    color: red;
+
+}

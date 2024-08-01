@@ -1,0 +1,134 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:hsl(264, 84%, 17%);
+   
+}
+#allDivContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:hsl(264, 84%, 17%) ;
+    /* border: 1px solid black; */
+}
+#head{
+    height: 10vh;
+    width: 100%;
+    /* border: 1px solid white; */
+    background-color: #2E236C;
+    display: flex;
+}
+#head img{
+    height: 8vh;
+    width: 8vh;
+    padding: 10px 10px 10px 20px;
+
+}
+#head h1{
+    font-size: 45px;
+    color: black;
+    font-weight: 600;
+    margin: 10px 20px 10px 0;
+}
+#head button{
+    height: 6vh;
+    width: 23vh;
+    cursor: pointer;
+    border: none;
+    box-shadow: inset 15px 10px 15px 20px hsl(264, 84%, 17%) ;
+    background-color:transparent ;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #f1c51c;
+    border-radius: 5px;
+    margin-left: 150vh;
+    margin-top: 16px;
+    padding: 4px;;
+    font-size: 20px;
+}
+
+.details{
+    height: 100vh;
+    width:120vw;
+    margin-top: 10vh;
+    text-align: center;
+    position: relative;
+    color: white;
+    
+}
+#movieTitle{
+    color:aqua;
+    font-size: 30px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+#rating{
+    font-size: 18px;
+    margin: 20px 10px 20px -95px;
+}
+#relieasedDate{
+    font-size: 18px;
+    margin-left:-10vh ;
+    margin-top: 5vh;
+}
+#duration{
+    font-size: 18px;
+    margin-left: 30vh;
+    margin-top: 5vh;
+}
+.discription{
+    height: 40%;
+    width: 74%;
+    /* border: 1px solid white; */
+    margin-left: 15%;
+    margin-top: 2%;
+    color: white;
+    background-color: #17153B;
+    
+    
+}
+.details span{
+    color:white;
+}
+.discription img{
+    height: 100%;
+    width: 28%;
+    margin-left: -115vh;
+
+}
+#explaination{
+    font-size: 16px;
+    /* border: 1px solid white; */
+    height: auto;
+    width: 68%;
+    margin-left: 45vh;
+    margin-top: -40vh;
+}
+#storyLine{
+    /* border: 1px solid white; */
+    height:40%;
+    width:100%;
+    padding: 10px;
+    color:aqua;
+}
+#storyLine p{
+    margin:0px 5px 5px -10px;
+   
+}
+#otherInfo {
+    height:40%;
+    width:100%;
+    padding: 10px;
+    color:aqua;
+    /* border: 1px solid green; */
+    align-items: first baseline;
+    text-align: left;
+}
+#otherInfo p{
+    margin: 0px 5px 5px -10px;
+    
+}
