@@ -1,5 +1,6 @@
 const apiUrl =`http://www.omdbapi.com/?apikey=efe13fd8&i=`;
 
+// ....added event listener onpage load get id from local storage and render result of favorites movies......
 document.addEventListener('DOMContentLoaded',async()=>{
     const favorites=JSON.parse(localStorage.getItem('favorites'))|| [];
     const container=document.getElementById('favourateMovies');
@@ -19,11 +20,12 @@ document.addEventListener('DOMContentLoaded',async()=>{
             </button><a href="details.html?id=${movie.imdbID}" id="viewDetails"  onclick="movieDetails('${movie.imdbID}')">details</a>`;
 
             container.appendChild(movieEl);
-            
-        }
 
+        }
     }
-}) 
+});
+
+// ...........remove from favorites list function will remove the movie from favorites list....
 function removeFromFavorites(movieId,element){
     let favorites=JSON.parse(localStorage.getItem('favorites'))|| [];
     favorites=favorites.filter( id => id !== movieId);
@@ -31,7 +33,7 @@ function removeFromFavorites(movieId,element){
     element.classList.add('.fa-regular');
     location.reload();
 }
-
+// ...........go back function will go back to the privious page on click of go back button...................
 function goToSearch(){
     window.history.back();
 }

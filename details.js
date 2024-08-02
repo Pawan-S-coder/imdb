@@ -1,5 +1,7 @@
-const apiUrl =`http://www.omdbapi.com/?apikey=efe13fd8&plot=full&i=`;
 
+const apiUrl =`http://www.omdbapi.com/?apikey=efe13fd8&plot=full&i=`;
+// ..................create eventlister on page load if someone click on view detail this page open and 
+// .................show details here from fetching movie id from local storage  ........................
 document.addEventListener('DOMContentLoaded',async()=>{
     const urlParams = new URLSearchParams(window.location.search);
     const movieId= urlParams.get('id')|| localStorage.getItem('movieId');
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
             }
 })
 
-
+// .................create a go back function which go back to the privious page......
 document.querySelector('#goback').addEventListener('click',()=>{
     window.history.back();
 })
